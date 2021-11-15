@@ -5,3 +5,9 @@
     width: 50rem;
     max-width: 95%;
 }
+.expense_no-data{
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ExpenseForm.css";
 import Card from "./Card";
-const ExpenseForm=()=>{
+const ExpenseForm=(props)=>{
     const[value , setValue]=useState({
         title:"",
         date:"",
@@ -11,7 +11,8 @@ const ExpenseForm=()=>{
 
     const handleSubmit=(event)=>{
         event.preventDefault();
-        console.log("value",value);
+        //console.log("value",value);
+        props.onAddExpense(value);
     };
     const handleValueChange=(event)=>{
         console.log(event.target);
