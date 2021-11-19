@@ -4,9 +4,9 @@ import ExpenseForm from "./ExpenseForm";
 
 function App() {
   const [expenseItems , setExpenseItems] = useState([
-    {date :new Date("2021-11-06"),title :"New Phone",price :500},
-    {date :new Date("2021-08-07"),title :"New Camera",price :300},
-    {date :new Date("2021-03-08"),title :"New TV",price :600},
+    {id: 1,date :new Date("2021-11-06"),title :"New Phone",price :500},
+    {id: 2,date :new Date("2021-08-07"),title :"New Camera",price :300},
+    {id: 3,date :new Date("2021-03-08"),title :"New TV",price :600},
   ]);
   const onAddExpense=(value)=>{
     // cach khac
@@ -26,7 +26,7 @@ function App() {
         {
           date  : new Date(value.data),
           title : value.title,
-          price : value.amount,
+          price : +value.amount,
         }
       ]
     })*/

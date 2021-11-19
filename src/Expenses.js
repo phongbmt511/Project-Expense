@@ -18,7 +18,7 @@ const Expenses=(props)=>{
             <ExpenseChart data={expenseItems}/>
             {expenseItems.length>0 ?  expenseItems.map((item)=>{
                 return (
-                    <ExpenseItem date={item.date} price={item.price} title={item.title}/>
+                    <ExpenseItem key={item.id} date={item.date} price={item.price} title={item.title}/>
                 )
             }):(
                 <div className="expense_no-data">(No data)</div>
