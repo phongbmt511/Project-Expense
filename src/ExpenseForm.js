@@ -24,7 +24,7 @@ const ExpenseForm = (props) => {
     };
 
     if (!formVisible) {
-        return <button onClick={() => {
+        return <button className="btnNew" onClick={() => {
             setFormVisible(true);
         }}>New Expense</button>
     }
